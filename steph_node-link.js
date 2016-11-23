@@ -85,7 +85,7 @@
       .attr("preserveAspectRatio", "none")
       .attr("xmlns:xlink", "http://www.w3.org/1999/xlink")
       .attr("xlink:href", function(d) {
-        return "../images/" + d.character.split(' ')[0].toLowerCase() + ".jpg"
+        return "images/" + d.character.split(' ')[0].toLowerCase() + ".jpg"
       })
 
     var draggable = d3.drag()
