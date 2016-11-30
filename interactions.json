@@ -115,10 +115,10 @@
 			"id": "Sam (Thomas Sangster)"
 		},
 		{
-			"character": "Aurelia (LÃºcia Moniz)",
+			"character": "Aurelia (Lúcia Moniz)",
 			"n": "1",
-			"label": "Aurelia (LÃºcia Moniz)",
-			"id": "Aurelia (LÃºcia Moniz)"
+			"label": "Aurelia (Lúcia Moniz)",
+			"id": "Aurelia (Lúcia Moniz)"
 		}
 	],
 	"links": [
@@ -866,98 +866,98 @@
 		},
 		{
 			"id": 106,
-			"source": "Aurelia (LÃºcia Moniz)",
+			"source": "Aurelia (Lúcia Moniz)",
 			"target": "Billy (Bill Nighy)",
 			"weight": 1,
 			"relationship": "default"
 		},
 		{
 			"id": 107,
-			"source": "Aurelia (LÃºcia Moniz)",
+			"source": "Aurelia (Lúcia Moniz)",
 			"target": "Joe (Gregor Fisher)",
 			"weight": 1,
 			"relationship": "default"
 		},
 		{
 			"id": 108,
-			"source": "Aurelia (LÃºcia Moniz)",
+			"source": "Aurelia (Lúcia Moniz)",
 			"target": "Jamie (Colin Firth)",
 			"weight": 6,
 			"relationship": "romantic"
 		},
 		{
 			"id": 109,
-			"source": "Aurelia (LÃºcia Moniz)",
+			"source": "Aurelia (Lúcia Moniz)",
 			"target": "Daniel (Liam Neeson)",
 			"weight": 1,
 			"relationship": "default"
 		},
 		{
 			"id": 110,
-			"source": "Aurelia (LÃºcia Moniz)",
+			"source": "Aurelia (Lúcia Moniz)",
 			"target": "Karen (Emma Thompson)",
 			"weight": 1,
 			"relationship": "default"
 		},
 		{
 			"id": 111,
-			"source": "Aurelia (LÃºcia Moniz)",
+			"source": "Aurelia (Lúcia Moniz)",
 			"target": "Colin (Kris Marshall)",
 			"weight": 1,
 			"relationship": "default"
 		},
 		{
 			"id": 112,
-			"source": "Aurelia (LÃºcia Moniz)",
+			"source": "Aurelia (Lúcia Moniz)",
 			"target": "Jack (Martin Freeman)",
 			"weight": 1,
 			"relationship": "default"
 		},
 		{
 			"id": 113,
-			"source": "Aurelia (LÃºcia Moniz)",
+			"source": "Aurelia (Lúcia Moniz)",
 			"target": "Judy (Joanna Page)",
 			"weight": 1,
 			"relationship": "default"
 		},
 		{
 			"id": 114,
-			"source": "Aurelia (LÃºcia Moniz)",
+			"source": "Aurelia (Lúcia Moniz)",
 			"target": "Mark (Andrew Lincoln)",
 			"weight": 1,
 			"relationship": "default"
 		},
 		{
 			"id": 115,
-			"source": "Aurelia (LÃºcia Moniz)",
+			"source": "Aurelia (Lúcia Moniz)",
 			"target": "Natalie (Martine McCutcheon)",
 			"weight": 1,
 			"relationship": "default"
 		},
 		{
 			"id": 116,
-			"source": "Aurelia (LÃºcia Moniz)",
+			"source": "Aurelia (Lúcia Moniz)",
 			"target": "PM (Hugh Grant)",
 			"weight": 1,
 			"relationship": "default"
 		},
 		{
 			"id": 117,
-			"source": "Aurelia (LÃºcia Moniz)",
+			"source": "Aurelia (Lúcia Moniz)",
 			"target": "Tony (Abdul Salis)",
 			"weight": 1,
 			"relationship": "default"
 		},
 		{
 			"id": 118,
-			"source": "Aurelia (LÃºcia Moniz)",
+			"source": "Aurelia (Lúcia Moniz)",
 			"target": "Harry (Alan Rickman)",
 			"weight": 1,
 			"relationship": "default"
 		},
 		{
 			"id": 119,
-			"source": "Aurelia (LÃºcia Moniz)",
+			"source": "Aurelia (Lúcia Moniz)",
 			"target": "Sam (Thomas Sangster)",
 			"weight": 1,
 			"relationship": "default"

@@ -1,7 +1,7 @@
 (function() {
     var margin = { top: 50, left: 50, right: 50, bottom: 50},
     height = 800 - margin.top - margin.bottom,
-    width = 1200 - margin.left - margin.right;
+    width = 960 - margin.left - margin.right;
 
   var svg = d3.select("#bubble-grid")
         .append("svg")

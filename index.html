@@ -3,21 +3,33 @@
   <head>
     <!-- The browser can use non-English-language characters (...kind of) -->
       <meta charset="utf-8">
+      <title>A Look at Love Actually</title>
       <style>
       * {
-        /*font-family: "Helvetica Neue";*/
-        font-family: "PT Sans", sans-serif;
+        font-family: "Helvetica Neue", sans-serif;
+        /*margin:0;
+        padding:0;
+        height:100%;*/
       }
       p, text {
         font-size: 1.20em;
       }
-
+      /*html {
+        margin: 0;
+        padding: 0;
+        height:100%;
+      }*/
+      body {
+        margin-left: auto;
+        margin-right: auto;
+        width:960px;
+        text-align: center;
+      }
       div.tooltip {
         position: absolute;
         text-align: center;
         color: white;
         width: 160px;
-        height: 75px;
         padding: 5px;
         font: 13px sans-serif;
         font-family: "PT Sans", sans-serif;
@@ -26,52 +38,87 @@
         border-radius: 4px;
         pointer-events: none;
         opacity: 0.6;
+        z-index: 2;
       }
-
       .grid line {
         stroke: lightgrey;
         stroke-opacity: 0.5;
         stroke-dasharray: 2;
         stroke-linecap: "butt"
-        }
-
+      }
       .grid path {
         stroke-width: 0;
-        }
-
-
+      }
+      #ribbon {
+        z-index:-1; 
+        height:100%; 
+        left:30px; 
+        position:absolute; 
+        /*width:100px*/
+      }
+      #bow {
+        position:absolute;
+        left:-70px;
+        right:50px;
+        height:250px;
+        width:250px;
+      }
       </style>
   </head>
   <body>
 
-    <h1>A Look at Love Actually</h1>
-    <h3>Stephanie Doctor, Amla Srivastava, and Daanish Raj</h3>
+    <img src="ribbon2_no_bow.png" id="ribbon">
+    <img src="ribbon2.png" id="bow">
 
-    <h4>How many characters are in each scene?</h4>
-    <div id="line-graph"></div>
+    <section>
+      <h1 style="font-size:72px;"><br/>A Look at <span style="color:#b61210">Love Actually</span><br/></h1>
+      <h3 style="font-size:32px;">A visual dive into the characters and their stories <br/><br/><span style="font-size:24px"> by <br/>Stephanie Doctor, Daanish Raj, and Amla Srivastava</span></h3>
+    </section>
 
-    <h4>How many lines are there in each scene?</h4>
+    <h3 class="section-break-space"><br/></h3>
+    <hr>
+    <h3 class="section-break-space"><br/></h3>
 
-    <h4>Which characters appear in each scene, and how much do they speak?</h4>
-    <div id="bubble-grid"></div>
+    <section>
+      <p>Intro to the project</p>
+    </section>
 
-    <h4>What are the characters' relationships to each other?</h4>
+    <h3 class="section-break-space"><br/></h3>
+    <hr>
+    <h3 class="section-break-space"><br/></h3>
 
-    <h4>Which characters appear together?</h4>
-    <div id="interactions"></div>
+    <section>
+      <h4>What is the overall structure of the movie?</h4>
+      <div id="line-graph"></div>
+    </section>
 
-    <h4>Which characters and scenes are the most positive or negative?</h4>
+    <h3 class="section-break-space"><br/></h3>
+    <hr>
+    <h3 class="section-break-space"><br/></h3>
 
+    <section>
+      <h4>Which characters appear throughout the course of the movie?</h4>
+      <div id="bubble-grid"></div>
+    </section>
+
+    <h3 class="section-break-space"><br/></h3>
+    <hr>
+    <h3 class="section-break-space"><br/></h3>
+
+    <section>
+      <h4>Which characters appear the most together?</h4>
+      <p>
+          <input type="radio" id="all" name="relationship">All
+          <input type="radio" id="romantic" name="relationship">Romantic
+          <input type="radio" id="friendship" name="relationship">Friendship
+          <input type="radio" id="family" name="relationship">Family
+          <input type="radio" id="work" name="relationship">Work
+      </p>
+      <div id="interactions"></div>
+    </section>
 
     <!-- This is D3, our graphing library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
-
-    <!-- A new library! Topojson! -->
-    <!-- <script src="http://d3js.org/topojson.v1.min.js"></script> -->
-
-    <!-- Another new library! d3 hexbin -->
-    <!-- <script src="https://d3js.org/d3-hexbin.v0.2.min.js"></script> -->
-
 
     <!-- Now we include our actual visualization -->
     <script src="amla_chart-1.js"></script>
