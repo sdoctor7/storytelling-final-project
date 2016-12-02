@@ -1,5 +1,5 @@
 (function() {
-  var width = 960,
+  var width = 1000,
     height = 650;
 
   var root = d3.select("#interactions")
@@ -89,7 +89,7 @@
       .attr("fill", function(d) {
         return "url(#" + d.character.split(' ')[0].toLowerCase() + ")"
       })
-      .attr('stroke', 'gray')
+      .attr('stroke', '#bbbbbb')
       .attr('stroke-width', '5px')
       .call(draggable)
       .on('mouseover', function(d) {
@@ -150,7 +150,7 @@
           if (d.relationship == 'romantic') {
             return '#b61210'
           }
-          else {return 'gray'}
+          else {return '#bbbbbb'}
         })
     })
     d3.select('#friendship').on('click', function() {
@@ -159,7 +159,7 @@
           if (d.relationship == 'friendship') {
             return '#b61210'
           }
-          else {return 'gray'}
+          else {return '#bbbbbb'}
         })
     })
     d3.select('#family').on('click', function() {
@@ -168,7 +168,7 @@
           if (d.relationship == 'family') {
             return '#b61210'
           }
-          else {return 'gray'}
+          else {return '#bbbbbb'}
         })
     })
     d3.select('#work').on('click', function() {
@@ -177,7 +177,7 @@
           if (d.relationship == 'work') {
             return '#b61210'
           }
-          else {return 'gray'}
+          else {return '#bbbbbb'}
         })
     })
 
