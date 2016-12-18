@@ -28,8 +28,8 @@
     .alphaTarget(0)
     .velocityDecay(0.95)
 
-  // var colorScale = d3.scaleOrdinal().domain(['friendship', 'romantic', 'family', 'work', 'default'])
-  //   .range(['yellow', 'red', 'lightblue', 'green', 'gray'])
+  var colorScale = d3.scaleOrdinal().domain(['friendship', 'romantic', 'family', 'work', 'default'])
+    .range(['#fc9272', '#b61210', '#ffdf35', 'black', '#bbbbbb'])
 
   var div = d3.select("body").append("div")
     .attr("class", "tooltip")
@@ -70,8 +70,8 @@
         .enter().append("line")
         .attr('class', 'link')
         .attr("stroke", function(d) {
-          // return colorScale(d.relationship)
-          return '#b61210'
+          return colorScale(d.relationship)
+          // return '#b61210'
         })
         .attr("fill", "none")
         .attr("stroke-width", function(d) {
@@ -96,7 +96,7 @@
         div.transition()
           .duration(200)
           .style("opacity", .9);
-        div.html("Character: " + d.character.split(' ')[0] + "<br/>Actor: " + d.character.split('(')[1].split(')')[0])
+        div.html("<b>Character: </b>" + d.character.split(' ')[0] + "<br/><b>Actor: </b>" + d.character.split('(')[1].split(')')[0])
           .style("left", (d3.event.pageX) + "px")
           .style("top", (d3.event.pageY - 28) + "px");
       }) 
@@ -140,46 +140,46 @@
       if (!d3.event.active) simulation.alphaTarget(0);
     }
 
-    d3.select('#all').on('click', function() {
-      d3.selectAll('.link')
-        .attr('stroke', '#b61210')
-    })
-    d3.select('#romantic').on('click', function() {
-      d3.selectAll('.link')
-        .attr('stroke', function(d) {
-          if (d.relationship == 'romantic') {
-            return '#b61210'
-          }
-          else {return '#bbbbbb'}
-        })
-    })
-    d3.select('#friendship').on('click', function() {
-      d3.selectAll('.link')
-        .attr('stroke', function(d) {
-          if (d.relationship == 'friendship') {
-            return '#b61210'
-          }
-          else {return '#bbbbbb'}
-        })
-    })
-    d3.select('#family').on('click', function() {
-      d3.selectAll('.link')
-        .attr('stroke', function(d) {
-          if (d.relationship == 'family') {
-            return '#b61210'
-          }
-          else {return '#bbbbbb'}
-        })
-    })
-    d3.select('#work').on('click', function() {
-      d3.selectAll('.link')
-        .attr('stroke', function(d) {
-          if (d.relationship == 'work') {
-            return '#b61210'
-          }
-          else {return '#bbbbbb'}
-        })
-    })
+    // d3.select('#all').on('click', function() {
+    //   d3.selectAll('.link')
+    //     .attr('stroke', '#b61210')
+    // })
+    // d3.select('#romantic').on('click', function() {
+    //   d3.selectAll('.link')
+    //     .attr('stroke', function(d) {
+    //       if (d.relationship == 'romantic') {
+    //         return '#b61210'
+    //       }
+    //       else {return '#bbbbbb'}
+    //     })
+    // })
+    // d3.select('#friendship').on('click', function() {
+    //   d3.selectAll('.link')
+    //     .attr('stroke', function(d) {
+    //       if (d.relationship == 'friendship') {
+    //         return '#b61210'
+    //       }
+    //       else {return '#bbbbbb'}
+    //     })
+    // })
+    // d3.select('#family').on('click', function() {
+    //   d3.selectAll('.link')
+    //     .attr('stroke', function(d) {
+    //       if (d.relationship == 'family') {
+    //         return '#b61210'
+    //       }
+    //       else {return '#bbbbbb'}
+    //     })
+    // })
+    // d3.select('#work').on('click', function() {
+    //   d3.selectAll('.link')
+    //     .attr('stroke', function(d) {
+    //       if (d.relationship == 'work') {
+    //         return '#b61210'
+    //       }
+    //       else {return '#bbbbbb'}
+    //     })
+    // })
 
   }
 
